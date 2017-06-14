@@ -1,0 +1,75 @@
+body, html{
+  width: 100%;
+  length: 100%;
+  font-family: "Calibri Light", sans-serif;
+  font-size: 11pt !important;
+}
+
+p{
+  margin: 0px;
+}
+
+.first-para{
+  margin-top: 1.14rem;
+}
+
+#sig{
+  font-family: 'Caveat', cursive;
+  /*font-family: 'Courgette', cursive;*/
+}
+
+.titles{
+  color: #666666;
+  font-weight: bold;
+}
+
+.top-holder{
+  position: relative;
+}
+
+.row{
+  margin-bottom: 0px;
+}
+
+.card-title{
+  font-size: 13pt !important;
+}
+
+.card-action{
+  border: none !important;
+}
+
+.list{
+  display: block;
+  /*font-size: 14pt !important;*/
+}
+
+.link-title{
+font-size: 12pt;
+}
+
+.links{
+  color: #ff5c5c;
+  font-size: 11pt !important;
+}
+
+.date-loc{
+  text-align: right;
+}
+
+ul.bullets {
+  margin-left: 15px !important;
+}
+
+.bullets >  li {
+    list-style-type: disc !important;
+}
+.borderline{
+  width: 100%;
+  border-bottom: #666666 solid 6px;
+}
+
+.bold-para{
+  font-weight: bold;
+  /*color: #666666;*/
+}
