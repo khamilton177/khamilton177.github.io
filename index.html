@@ -2,294 +2,257 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
-    <link rel="stylesheet" href="./styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Caveat|Courgette" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Full-Stack Web Developer Portfolio | KHamilton177.github.io</title>
+    <link href="https://fonts.googleapis.com/css?family=Atomic+Age|Baumans|Caveat|Cinzel+Decorative|Courgette|Megrim|Paytone+One|Poiret+One|Rajdhani:300|Raleway" rel="stylesheet">
+    <script src="https://use.fontawesome.com/144ed3a5c7.js"></script>
+    <link rel="stylesheet" href="portfolio.css">
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="row">
-          <div class="col s6 m6 l6">
-            <h4 class="titles">Kerry J. Hamilton</h4>
-            <h5 class="titles">Software Engineer</h5>
-            <p id="sig">Do What You Love and You'll Never Work</p>
-          </div>
-          <div class="col s6 m6 l6">
-            <!-- <p class="contact center"> -->
-            <p class="date-loc first-para"><a class="links" href="mailto:Kerry.Hamilton177@gmail.com" target="_blank">Kerry.Hamilton177@gmail.com</a></p>
-            <p class="date-loc"><a class="links" href="https://www.linkedin.com/in/khamilton177" target="_blank">linkedin.com/in/khamilton177</a></p>
-            <p class="date-loc"><a class="links" href="https://khamilton177.github.io" target="_blank">khamilton177.github.io</a>
-            <p class="date-loc">Greater NY Metro Area</p>
-            <p class="date-loc">347-470-4657</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col1 s1 m1 l1">
-          </div>
-          <div class="col10 s10 m1 l10">
-            <p class="borderline center"></p>
-          </div>
-          <div class="col1 s1 m1 l1">
-          </div>
-        </div>
-      </div>
-    </header>
-    <div class="container">
-      <div class="row">
-        <div class="col s6 m6 l6">
-          <div class="top-holder">
-            <div class="card-content">
-              <div class="row">
-                <div class="col s12 m12 l12">
-                  <h5 class="left bold-para titles">Web Projects</h5>
-                </div>
-              </div>
-              <span class="card-title bold-para">RockawayIce</span>
-              <p>A website for Rockaway Ice Lady, an Italian Ice Cart business.  Site includes Google Maps, Twilio, and SendGrid API’s and utilizes charts.js for depicting real-time voting information.</p>
-              <div class="card-action">
-                <ul>
-                  <li class="link-title">
-                    Project-
-                    <a class="links" href="http://rockawayicelady.herokuapp.com" target="_blank">rockawayicelady.herokuapp.com</a>
-                  </li>
-                  <li class="link-title">
-                    Code-
-                    <a class="links" href="http://github.com/khamilton177/RockawayIce" target="_blank">github.com/khamilton177/RockawayIce</a>
-                  </li>
-                </ul>
-              </div>
-              <span class="card-title bold-para">HoroscopeSympatico</span>
-              <p>A journal application that allows users to see and save daily horoscope predictions to personal journals to track accuracy of predictions.  Horoscopes are supplied via an API.</p>
-              <div class="card-action">
-                <ul>
-                  <li class="link-title">
-                    Project-
-                    <a class="links" href="#" target="_blank"></a>
-                  </li>
-                  <li class="link-title">
-                    Code-
-                    <a class="links" href="#" target="_blank"></a>
-                  </li>
-                </ul>
-              </div>
-              <span class="card-title bold-para">OdeToVannaWhite</span>
-              <p>Wheel of Fortune inspired game featuring dynamic HTML via vanilla Javascript and CSS animation.</p>
-              <div class="card-action">
-                <ul>
-                  <li class="link-title">
-                    Project-
-                    <a class="links" href="#" target="_blank"></a>
-                  </li>
-                  <li class="link-title">
-                    Code-
-                    <a class="links" href="http://github.com/khamilton177/OdeToVannaWhite" target="_blank">github.com/khamilton177/OdeToVannaWhite</a>
-                  </li>
-                </ul>
-              </div>
+    <div id="body-wrapper">
+      <header>
+        <div class="container">
+          <div id="home" class="section home">
+            <div class="home-titles-wrap">
+              <p id="home-title-name" class="home-titles">Kerry J. Hamilton</p>
+              <p id="home-title" class="home-titles">Full-Stack Web Developer</p>
             </div>
           </div>
         </div>
-        <div class="col s6 m6 l6">
-          <div class="top-holder">
-            <div class="card-content">
-              <div class="row">
-                <div class="col s7 m7 l7">
-                  <h5 class="left bold-para titles">Technology Skills</h5>
-                </div>
+      </header>
+      <nav id="nav" class="nav">
+        <div class="container nav-container">
+          <i id="nav-mobile-bar-icon" class="fa fa-bars" aria-hidden="true"></i>
+          <input id="nav-mobile-bar-checkBox" type="checkbox">
+          <div id="nav-bar" class="nav-bar">
+            <a id="home-nav-btn" class="nav-a" href="index.html"><h2 id="nav-title-name" class="nav-titles">Kerry J. Hamilton</h2></a>
+            <div class="nav-bar-wrapper">
+              <ul id="nav-ul" class="nav-full-bar">
+                <li class="nav-li">
+                  <a id="a" class="nav-a" href="#intro">Hello</a>
+                </li>
+                <li class="nav-li">
+                  <a class="nav-a" href="#projects">My Work</a>
+                </li>
+                <li class="nav-li">
+                  <a class="nav-a" href="#skills">Skills</a>
+                </li>
+                <li class="nav-li">
+                  <a class="nav-a" href="#about">About Me</a>
+                </li>
+                <li class="nav-li">
+                  <a class="nav-a" href="#contact">Contact</a>
+                </li>
+              </ul>
+              <ul id="nav-ul-mobile" class="nav-mobile-bar">
+                <li class="nav-li">
+                  <a class="nav-a" href="#home">Home</a>
+                </li>
+                <li class="nav-li">
+                  <a class="nav-a" href="#projects">My Work</a>
+                </li>
+                <li class="nav-li">
+                  <a class="nav-a" href="#skills">Skills</a>
+                </li>
+                <li class="nav-li">
+                  <a class="nav-a" href="#about">About Me</a>
+                </li>
+                <li class="nav-li">
+                  <a class="nav-a" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <h4 id="nav-title" class="nav-titles sigs">Do What You Love and You'll Never Work</h4>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <div class="container main-container">
+          <div id="intro" class="sect intro">
+            <div class="sect-wrap">
+              <h2 class="sect-titles">HELLO</h2>
+              <hr>
+            </div>
+            <p>Whether it’s coding, decorating, or cooking, I love saying "I made that!".</p>
+            <p>I have 18 years of experience customizing and extending enterprise and service management solution software functionality.  Now, I am pursuing my passion for coding by building applications from concept to production.</p>
+            <p>I believe my prior experience along with my newly developed skills allow me to be an advantage and viable component to any team or project.  I am continuously working to improve my coding skills and evolve my projects.  Presently, I am pursuing my Microsoft Web Builder certification with a focus on Azure.</p>
+            <p>Please have a look around to learn about some of my projects and a little about me.</p>
+            <p>This site is powered by Vanilla JavaScript and CSS.  No frameworks or libraries were used for layout or animation.</p>
+          </div>
+          <div id="skills" class="sect skills">
+            <h2 class="sect-titles">Skills</h2>
+            <hr>
+            <article class=skills-article>
+              <div class="front">
+                <h3>Front End</h3>
+                <ul>
+                  <li>JavaScript</li>
+                  <li>JQuery</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>SASS</li>
+                </ul>
               </div>
-              <div class="row">
-                <div class="col s6 m6 l6">
-                  <ul>
-                    <li>JavaScript</li>
-                    <li>JQuery</li>
-                    <li>HTML / HTML5</li>
-                    <li>CSS3 / SASS</li>
-                    <li>Rails</li>
-                    <li>Sinatra</li>
-                    <li>XML</li>
-                    <li>JSON</li>
-                    <li>Windows Servers</li>
-                    <li>Linux</li>
-                    <li>Unix</li>
-                    <li>CA Service Desk Manager</li>
-                  </ul>
-                </div>
-                <div class="col s6 m6 l6">
-                  <ul>
-                    <li>Ruby</li>
-                    <li>PHP</li>
-                    <li>PERL</li>
-                    <li>Java</li>
-                    <li>SPEL Code</li>
-                    <li>SOAP / RESTful</li>
-                    <li>SQL</li>
-                    <li>Data Warehousing</li>
-                    <li>IIS / Tomcat</li>
-                    <li>LDAP</li>
-                    <li>BOXI</li>
-                    <li>Xtraction</li>
-                  </ul>
-                </div>
+              <div class="back">
+                <h3>Back End</h3>
+                <ul>
+                  <li>Ruby</li>
+                  <li>PHP</li>
+                  <li>PERL</li>
+                  <li>Java</li>
+                  <li>SPEL Code</li>
+                  <li>Rails</li>
+                  <li>Sinatra</li>
+                  <li>SQL</li>
+                </ul>
               </div>
-              <div class="row">
-                <div class="col s12 m12 l12">
-                  <h5 class="left bold-para titles">Personal Interests</h5>
-                </div>
+              <div class="other">
+                <h3></h3>
+                <ul>
+                  <li>SOAP / RESTful</li>
+                  <li>Windows Servers</li>
+                  <li>Linux</li>
+                  <li>Unix</li>
+                  <li>Data Warehousing</li>
+                  <li>IIS / Tomcat</li>
+                </ul>
               </div>
-              <div class="row">
-                <div class="col s12 m12 l12">
-                  <ul>
-                    <li class="links">Interior Design<a class="links" href="#"></a></li>
-                    <li>Puzzle Solving Games</li>
-                    <li class="links">Cooking<a class="links" href="#"></a></li>
-                  </ul>
+            </article>
+            <a class="resume" href="KerryHamilton177_resume.pdf" download><img class="resume"src="./images/pdf_lg.png" >Download Resume</a>
+          </div>
+          <div id="projects" class="sect">
+            <div class="sect-wrap">
+              <h2 class="sect-titles">Projects</h2>
+              <hr>
+            </div>
+            <div class="projects">
+              <article class="proj-articles">
+                <div class="proj-details">
+                  <div class="proj-links-wrap">
+                    <a id="rockrce-app" class="proj-links" href="http://rockawayicelady.herokuapp.com">Launch RockawayIce</a>
+                    <a id="rockice-git" class="proj-links" href="http://github.com/khamilton177/RockawayIce">RockawayIce on GitHub</a>
+                  </div>
+                  <video id="rockice-vid" class="proj-container" src="./images/Voting-Rock.mp4" type="video/mp4" controls preload="auto" poster="./images/wheres_cart-Rock.gif">
+                  </video>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col s12 m12 l12">
-                  <h5 class="left bold-para titles">Certifications</h5>
+              </article>
+              <article class="proj-articles">
+                <div class="proj-details">
+                  <div class="proj-links-wrap">
+                    <a id="vanna-app" class="proj-links" href="">Launch OdeToVannaWhite</a>
+                    <a id="vanna-git" class="proj-links" href="http://github.com/khamilton177/OdeToVannaWhite">OdeToVannaWhite on Github</a>
+                  </div>
+                  <video id="vanna-vid" class="proj-container" src="./images/vannawhite-win.mp4" type="video/mp4" controls preload="auto" poster="./images/vannawhite-win.gif">
+                  </video>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col s12 m12 l12">
-                  <ul>
-                    <li>ITIL Foundation</li>
-                    <li>Proven Pro CA Service Desk Manager 14.x</li>
-                    <li>Sun Certified System Admin Solaris 8</li>
-                  </ul>
+              </article>
+              <article class="proj-articles">
+                <div class="proj-details">
+                  <div class="proj-links-wrap">
+                    <a id="horo-app" class="proj-links" href="">Launch HoroscopeSympatico</a>
+                    <a id="horo-git" class="proj-links" href="">HoroscopeSympatico on GitHub</a>
+                  </div>
+                  <video id="horo-vid" class="proj-container" type="video/mp4" controls preload="auto" poster=""></video>
                 </div>
-              </div>
+              </article>
+            </div>
+          </div>
+          <div id="about" class="sect">
+            <div class="sect-wrap">
+              <h2 class="sect-titles">Random Facts About Me</h2>
+              <hr>
+            </div>
+            <div class="about">
+              <article>
+                <div id="pig" class="circle">
+                  <p class="the-tea">
+                    I hoard Starbucks Christmas Expresso Blend every year to make it through to the next season.
+                    <button name="pig" type="button" class="p-btn">Why the Pig???</button>
+                  </p>
+                  <p class="the-extra-tea">
+                    1. She's cute.
+                    <BR>
+                    2. She's wearing a pink bikini.
+                    <BR>
+                    3. No FREE advertising for Starbucks!
+                  </p>
+                  <img id="pig" class="imgs" src="./images/pig.jpg" alt="">
+                </div>
+              </article>
+              <article>
+                <div id="lucy" class="circle">
+                  <p class="the-tea">
+                    Some say I’m a lot like Lucy Ricardo-
+                    <BR>
+                    We both always have a wacky plan.
+                    <BR>
+                    We love to sing <strong>...AND WILL LOUDLY</strong>, but really shouldn’t :-(.
+                  <button name="lucy" type="button" class="p-btn">Trivia</button>
+                  </p>
+                  <p class="the-extra-tea">
+                    My favorite 'I Love Lucy' line...
+                    <BR>
+                    <em>"Do you poop-out at parties???"</em>
+                    <BR>
+                    'Vitameatavegamin' Season 1 Episode 30
+                  </p>
+                  <img id="lucy" class="imgs" src="./images/lucy.jpg" alt="">
+                </div>
+              </article>
+              <article>
+                <div id="mannequin" class="circle">
+                  <p class="the-tea">
+                    When I was a child, my grandmother owned a real estate office right in front of a bus stop.
+                    <BR>
+                    I would stand in the window and pose like a mannequin.
+                    <button name="mannequin" type="button" class="p-btn">True Confession</button>
+                  </p>
+                  <p class="the-extra-tea">
+                    I would <strong>STILL</strong> do this just in a more congruous setting.
+                  </p>
+                  <img id="mannequin" class="imgs" src="./images/mannequin.jpg" alt="">
+                </div>
+              </article>
+              <article>
+                <div id="eggs" class="circle">
+                  <p class="the-tea">
+                    I could live off eggs <em>(...and maybe a little ham)</em>.
+                    <BR>
+                    I have over 10 egg main entree recipes.
+                    <button name="eggs" type="button" class="p-btn">Trivia</button>
+                  </p>
+                  <p class="the-extra-tea">
+                    Dr. Seuss' original 'How the Grinch Stole Christmas' is <strong>must</strong> see TV every year.
+                  </p>
+                  <img id="eggs" class="imgs" src="./images/eggs2.jpg" alt="">
+                </div>
+              </article>
+            </div>
+          </div>
+          <div id="contact" class="sect contact">
+            <h2 class="sect-titles">Contact Me</h2>
+            <hr>
+            <p>I'm available for hire.</p>
+            <p>If you're interested in my work or want to know more about me, let's connect!</p>
+            <p id="email">kerry.hamilton177@gmail.com</p>
+            <p>I would love to learn about you, your company, and your projects, too.</p>
+            <div>
+              <a href="https://khamilton177.github.io" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/in/khamilton177" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+              <a href="mailto:Kerry.Hamilton177@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
             </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col s12 m12 l12">
-          <div class="top-holder">
-            <div class="card-content">
-              <div class="row">
-                <div class="col s12 m12 l12">
-                  <h5 class="left bold-para titles">Professional Experience</h5>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col s6 m6 l6">
-                  <p class="bold-para">Senior IT System Engineer</p>
-                  <p>CenturyLink</p>
-                </div>
-                <div class="right col s6 m6 l6">
-                  <p class="date-loc">2009 - 2016</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col s12 m12 l12">
-                  <ul class="bullets">
-                    <li>Successfully served as product solution owner for the CA Service Management SaaS/MSP offering encompassing three stand-alone environments and one multi-tenanted environment with over 10,000 users and 38 Windows 2008 R2 servers.</li>
-                    <li>Engaged weekly with clients and Customer Success Partners to review milestones and project progression.</li>
-                    <li>Reduced manual work effort and increased service desk analyst's productivity by teaming with other department leads to establish custom ebond ticket handling between multiple ticketing systems.</li>
-                    <li>Designed, deployed, performed extensive customizations, and provided continuous support and troubleshooting for all new and current ITSM instances.</li>
-                    <li>Created SQL views, replications and ETL jobs used to produce over 200 adhoc and scheduled reports.</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col s6 m6 l6">
-                  <p class="bold-para">Independent Consultant</p>
-                  <p>XL Capital</p>
-                </div>
-                <div class="right col s6 m6 l6">
-                  <p class="date-loc">2008 - 2009</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col s12 m12 l12">
-                  <ul class="bullets">
-                    <li>Spearheaded decision-based CA Workflow driven Change Management project which substantially improved process.</li>
-                    <li>Overhauled CMDB to eliminate system application redundancy and leverage Configuration Item information in integrate applications.</li>
-                    <li>Integrated third-party and custom application request and change management systems into current Unicenter Service Desk to drastically reduce work effort and swivel chair.</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col s6 m6 l6">
-                  <p class="bold-para">System Engineer</p>
-                  <p>Custom Computer Specialists</p>
-                </div>
-                <div class="right col s6 m6 l6">
-                  <p class="date-loc">2006 - 2008</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col s12 m12 l12">
-                  <ul class="bullets">
-                    <li>Selected as first engineer for company's new CA Service Desk Manager professional services offering.</li>
-                    <li>Architected and implemented greenfield CA Serivce Desk Manager for major NY non-profit company servicing 10,000 IT customers.</li>
-                    <li>Designed pre-sales implementation schedules, scope of work documents, and Solution Architecture Specifications.</li>
-                    <li>Partnered for CA Service Desk Manager and CA Desktop and Server Management initial implementation for 1,500 servers.</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col s6 m6 l6">
-                  <p class="bold-para">Consultant</p>
-                  <p>CA Technologies</p>
-                </div>
-                <div class="right col s6 m6 l6">
-                  <p class="date-loc">1998 - 2006</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col s12 m12 l12">
-                  <ul class="bullets">
-                    <li>Successfully completed CA Architect Academy for Enterprise Management Systems and Business Services Optimization (EMS and BSO) products.</li>
-                    <li>Engaged at numerous Fortune 500 client sites to deliver high quality support for configuration and support of multi-platform CA Enterprise Management environments.</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col s6 m6 l6">
-                  <h5 class="left bold-para titles">Education</h5>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col s6 m6 l6">
-                  <p class="bold-para">New York Code and Design Academy</p>
-                  <span class="card-title">Certificate in Full-Stack Web Development</span>
-                </div>
-                <div class="right col s6 m6 l6">
-                    <p class="date-loc">2017</p>
-                </div>
-              </div>
-              <BR>
-              <div class="row">
-                <div class="col s6 m6 l6">
-                  <p class="bold-para">Katherine Gibbs School</p>
-                  <span class="card-title">Certificate in ComputerTechnology</span>
-                </div>
-                <div class="col s6 m6 l6">
-                  <p class="date-loc">1998</p>
-                </div>
-              </div>
-              <BR>
-            </div>
-          </div>
+      </main>
+      <footer>
+        <div class="container footer-container">
+          <h4 class="sigs">“A day without a friend is like a pot without a single drop of honey left inside."- Winnie the Pooh</h4>
         </div>
-      </div>
+      </footer>
     </div>
-    <footer>
-      <div class="container"
-        <div class="row">
-          <div class="col s1 m1 l1">
-          </div>
-          <div class="col s10 m10 l10">
-            <p class="borderline center"></p>
-          </div>
-          <div class="col s1 m1 l1">
-          </div>
-        </div>
-      </div>
-    </footer>
+    <div class="scroll">
+      <button id="scroll-up" type="button"><i class="fa fa-chevron-circle-up fa-2x" aria-hidden="true"></i></button>
+    </div>
+    <script type="text/javascript" src="portfolio.js"></script>
   </body>
 </html>
