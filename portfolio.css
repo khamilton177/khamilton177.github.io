@@ -8,6 +8,7 @@ font-family: 'Courgette', cursive;
 font-family: 'Rajdhani', sans-serif;
 font-family: 'Baumans', cursive;
 font-family: 'Cinzel Decorative', cursive;
+font-family: 'Paytone One', sans-serif;
 
 Middle Red Purple- #190B28;  For Text
 Thistle- #D3BCCC; || Pink Lace- #F9DBFF;  For Background
@@ -301,14 +302,26 @@ img.resume{
   justify-content: center;
 }
 
+.skills-titles{
+    width: 100%;
+    text-align: center;
+    font-family: 'Paytone One', sans-serif;
+    color: white;
+}
+
+.skills-ul{
+  list-style-type: none;
+  font-weight: bold;
+}
+
 .resume{
   display: block;
   margin: 0 auto;
 }
 
 .front, .back, .other{
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   position: relative;
   margin: 20px;
   display: inline-block;
