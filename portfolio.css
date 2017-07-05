@@ -398,7 +398,7 @@ img.resume{
   z-index: 1;
 }
 
-.circle:hover {
+.circle:hover, .circle:active {
   background: #380036;
   border: 5px solid #380036;
   -webkit-transform: scale(1.5);
@@ -790,7 +790,7 @@ figcaption {
   z-index: 1;
 }
 
-.after-pics:hover {
+.after-pics:hover .after-pics:active{
   position: relative;
   -webkit-transform: scale(2) translate(0px, -45px);
   -moz-transform: scale(2) translate(0px, -45px);
@@ -810,7 +810,11 @@ figcaption {
     height: 240px;
   }
 
-  .after-pics-first:hover, .after-pics-last:hover {
+  .after-pics, .after-pics-first, .after-pics-last{
+    cursor: pointer;
+  }
+
+  .after-pics-first:hover, .after-pics-first:active, .after-pics-last:hover, .after-pics-last:active {
     position: relative;
     -webkit-transform: scale(1.5) translate(0px, -45px);
     -moz-transform: scale(1.5) translate(0px, -45px);
@@ -827,7 +831,7 @@ figcaption {
     height: 360px;
   }
 
-  .after-pics-first:hover {
+  .after-pics-first:hover, .after-pics-first:active {
     position: relative;
     -webkit-transform: scale(2) translate(50px, -45px);
     -moz-transform: scale(2) translate(50px, -45px);
@@ -836,7 +840,7 @@ figcaption {
     transform: scale(2) translate(50px, -45px);
   }
 
-  .after-pics-last:hover {
+  .after-pics-last:hover, .after-pics-last:active {
     position: relative;
     -webkit-transform: scale(2) translate(-50px, -45px);
     -moz-transform: scale(2) translate(-50px, -45px);
