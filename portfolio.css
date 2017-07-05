@@ -801,6 +801,11 @@ figcaption {
 
 @media (max-width: 1300px){
 
+  /*  This is to allow mobile-touch screens to leave hover */
+  body{
+    cursor: pointer;
+  }
+
   .diagrams, .after{
     flex-wrap: wrap;
   }
