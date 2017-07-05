@@ -78,7 +78,7 @@ body{
   overflow-y: scroll;
   overflow-x: hidden;
   color: #380036;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 nav, main, footer{
@@ -168,14 +168,14 @@ img.resume{
 
 #projects{
   background-color: #FEF65B;
-  border-top: 35px solid white;
-  border-bottom: 35px solid white;
+  border-top: 35px solid #FEF65B;
+  /*border-bottom: 35px solid white;*/
 }
 
 #about{
   background-color: #FF00AA;
-  border-top: 35px solid white;
-  border-bottom: 35px solid white;
+  border-top: 35px solid #FF00AA;
+  /*border-bottom: 35px solid white;*/
 }
 
 #email{
@@ -304,12 +304,13 @@ img.resume{
 
 .intro p:last-of-type{
   padding-bottom: 20px;
+  margin-bottom: 0;
 }
 
 .skills{
-  border-top: 35px solid white;
-  border-bottom: 35px solid white;
-  background-color: rgba(185, 142, 167, 0.2);
+  border-top: 35px solid rgba(185, 142, 167, 0);
+  /*border-bottom: 35px solid white;*/
+  background-color: rgba(185, 142, 167, 0.4);
 }
 
 .skills-article{
@@ -452,7 +453,7 @@ img.resume{
 }
 
 .p-btn {
-  width: 75%;
+  width: 55%;
   position: relative;
   top: 5px;
   display: block;
@@ -469,7 +470,7 @@ img.resume{
 
 .contact{
   padding: 20px 0;
-  border-top: 35px solid white;
+  /*border-top: 35px solid white;*/
   background-color: #B98EA7;
 }
 
@@ -596,7 +597,7 @@ img.resume{
   .the-tea, .the-extra-tea{
     width: 150px;
     /*height: 55px;*/
-    font-size: 8pt;
+    font-size: 7pt;
   }
 
   .p-btn {
@@ -665,7 +666,7 @@ img.resume{
   }
 
   .p-btn {
-    font-size: 8pt;
+    font-size: 7.5pt;
   }
 }
 
@@ -726,7 +727,7 @@ img.resume{
   }
 
   .p-btn {
-    font-size: 8pt;
+    font-size: 7.5pt;
   }
 }
 
@@ -766,8 +767,8 @@ figcaption {
   align-items: center;
   justify-content: center;
   background-color: #FEF65B;
-  border-top: 35px solid white;
-  border-bottom: 35px solid white;
+  /*border-top: 35px solid white;
+  border-bottom: 35px solid white;*/
 }
 
 .before, .after{
