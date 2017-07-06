@@ -518,10 +518,25 @@ img.resume{
 }
 
 /*  Small/Phone Screens */
-@media (min-width:320px) and (max-width: 768px){
+@media (max-width: 768px){
 
   article:nth-of-type(1){
     margin-top: 20px;
+  }
+
+  #home{
+    /*background-size: 100% 100%;*/
+  }
+
+  #home-title-name{
+    /*margin-top: 250px;*/
+    font-size: 19px;
+  }
+
+  #home-title{
+    margin-top: 0;
+    font-family: 'Paytone One', sans-serif;
+    font-size: 24px;
   }
 
   #nav-mobile-bar-icon{
@@ -541,17 +556,6 @@ img.resume{
     z-index: 500;
   }
 
-  #home-title-name{
-    /*margin-top: 250px;*/
-    font-size: 19px;
-  }
-
-  #home-title{
-    margin-top: 0;
-    font-family: 'Paytone One', sans-serif;
-    font-size: 24px;
-  }
-
   .nav-full-bar{
     display:none;
   }
@@ -567,7 +571,6 @@ img.resume{
     text-decoration: none;
     font-weight: bold;
     color: #380036;
-    /*color: #B98EA7;*/
   }
 
   .intro p, .contact p{
@@ -612,10 +615,6 @@ img.resume{
     margin-top: 20px;
   }
 
-  #nav-mobile-bar-checkBox, #nav-mobile-bar-icon, .nav-mobile-bar{
-    display:none;
-  }
-
   #home-title-name{
     /*margin-top: 255px;*/
     font-size: 35px;
@@ -625,6 +624,10 @@ img.resume{
     margin-top: 0px;
     font-family: 'Paytone One', sans-serif;
     font-size: 45px;
+  }
+
+  #nav-mobile-bar-checkBox, #nav-mobile-bar-icon, .nav-mobile-bar{
+    display:none;
   }
 
   .nav-full-bar >.nav-li, .nav-a{
@@ -673,14 +676,6 @@ img.resume{
 /*  large/lap and Desktops Screens */
 @media (min-width: 1301px){
 
-  article{
-    /*margin-top: 40px;*/
-  }
-
-  #nav-mobile-bar-checkBox, #nav-mobile-bar-icon, .nav-mobile-bar{
-    display:none;
-  }
-
   #home-title-name{
     /*margin-top: 210px;*/
     font-size: 45px;
@@ -690,6 +685,10 @@ img.resume{
     margin-top: 0;
     font-family: 'Paytone One', sans-serif;
     font-size: 55px;
+  }
+
+  #nav-mobile-bar-checkBox, #nav-mobile-bar-icon, .nav-mobile-bar{
+    display:none;
   }
 
   .nav-full-bar >.nav-li, .nav-a{

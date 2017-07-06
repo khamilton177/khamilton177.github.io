@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function(){
       px=px.replace(/px/,"");
     }
     else {
-      var px=568; // Set to min-height because on page resfresh not capturing
+      var px=568; // Set to min-height because on page refresh not capturing
     }
     px=Number(px)-25;
     // console.log("Bottom is "+ px);
