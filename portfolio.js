@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function(){
     var x=win.innerWidth||docBody.clientWidth;
     var y=win.innerHeight||docBody.clientHeight;
     home.style.height=y+"px";
-    // console.log(x+","+y);
+    console.log(x+","+y);
     //  Make sure to 'uncheck' mobile menu on resize
     navMobileCheck.checked=false;
   }
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function(){
   var scrollUp=function(element, to, duration) {
     if (duration <= 0) return;
     var move = to - element.scrollTop;
-    // console.log("moving-"+ move);
+    console.log("moving-"+ move);
     var perpx = move / duration * 10;
 
     setTimeout(function() {
@@ -50,19 +50,24 @@ document.addEventListener("DOMContentLoaded", function(){
       px=px.replace(/px/,"");
     }
     else {
-      var px=568; // Set to min-height because on page refresh not capturing
+      // Set to min-height because on page refresh not capturing
+      var px=568;
     }
-    px=Number(px)-25;
-    // console.log("Bottom is "+ px);
+    px=Number(px);
+    console.log("Bottom is "+ px);
+
+    // Going to use this point in scroll position to hide scrollUpBtn
+    var pxHalfPt=px/2;
+    console.log("hide at"+ pxHalfPt);
 
     var offSet=win.pageYOffset;
 
-    // console.log("Your at "+ offSet);
+    console.log("Your at "+ offSet);
     if (offSet >= px){
       nav.classList.add("nav-fixed");
       // Capture @media scrren width.
       screenWidth=win.matchMedia("screen and (max-width: 768px)");
-      // console.log("Screen Width"+ screenWidth.matches);
+      console.log("Screen Width"+ screenWidth.matches);
       if (screenWidth.matches){
         //  Add small screen only element.  Done on scroll because element lost on refreshes.
         navIcon=document.querySelector("#nav-mobile-bar-icon");
@@ -74,13 +79,23 @@ document.addEventListener("DOMContentLoaded", function(){
       nav.classList.remove("nav-fixed");
       // Capture @media scrren width.
       screenWidth=win.matchMedia("screen and (max-width: 768px)");
-      // console.log("Screen Width"+ screenWidth.matches);
+      console.log("Screen Width"+ screenWidth.matches);
       if (screenWidth.matches){
         //  Add small screen only element.  Done on scroll because element lost on refreshes.
         navIcon=document.querySelector("#nav-mobile-bar-icon");
         navIcon.classList.remove("nav-mobile-menu-fixed");
         navMobileCheck.classList.remove("nav-mobile-menu-fixed");
       }
+    }
+    if (offSet >= pxHalfPt){
+      //  Show button and make cursor hand
+      scrollUpBtn.style.opacity=1;
+      scrollUpBtn.style.cursor="pointer";
+    }
+    else{
+      //  Hide button and remove hand cursor
+      scrollUpBtn.style.opacity=0;
+      scrollUpBtn.style.cursor="default";
     }
   });
 
@@ -92,10 +107,10 @@ document.addEventListener("DOMContentLoaded", function(){
   for (cnt=0; circles.length > cnt; cnt++){
     circles[cnt].addEventListener("mouseenter", function(event){
       var circleName=event.target.id;
-      // console.log(circleName);
+      console.log(circleName);
       var img=document.querySelector("img#"+circleName);
       var tea=document.querySelector("div#"+circleName+" p.the-tea");
-      // console.log(img);
+      console.log(img);
       img.style.opacity=0;
       tea.classList.add("animate-fade-in");
     });
@@ -104,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function(){
   for (cnt=0;circles.length > cnt; cnt++){
     circles[cnt].addEventListener("mouseleave", function(event){
       var circleName=event.target.id;
-      // console.log(circleName);
+      console.log(circleName);
       var img=document.querySelector("img#"+circleName);
       var tea=document.querySelector("div#"+circleName+" p.the-tea");
       this.classList.remove("animate-flip");
@@ -117,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function(){
     aboutBtn[cnt].addEventListener("click", function(event){
       event.preventDefault();
       var btnName=event.target.name;
-      // console.log(btnName);
+      console.log(btnName);
       document.querySelector("#"+btnName).classList.add("animate-flip");
     });
  }

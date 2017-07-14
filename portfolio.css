@@ -76,7 +76,7 @@ body{
   height: 100%;
   margin: 0 auto;
   overflow-y: scroll;
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
   color: #380036;
   font-family: 'Raleway', sans-serif;
 }
@@ -105,6 +105,10 @@ hr{
   margin-bottom: 20px;
   border-style: solid;
   border-color: white;
+}
+
+a{
+  color: #380036;
 }
 
 a.resume{
@@ -167,8 +171,8 @@ img.resume{
 }
 
 #projects{
-  background-color: #FEF65B;
-  border-top: 35px solid #FEF65B;
+  background-color: #D3BCCC;
+  border-top: 35px solid #D3BCCC;
   /*border-bottom: 35px solid white;*/
 }
 
@@ -187,6 +191,7 @@ img.resume{
   background-color: transparent;
   color: rgba(132, 121, 150, 0.4);
   outline-color: rgba(132, 121, 150, 0.6);
+  opacity: 0;
 }
 
 .container{
@@ -294,8 +299,11 @@ img.resume{
 }
 
 .intro p{
-  margin-left: 5px;
-  margin-right: 5px;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 20px;
+  /*margin-left: 5px;
+  margin-right: 5px;*/
 }
 
 .intro p:first-of-type{
@@ -303,7 +311,7 @@ img.resume{
 }
 
 .intro p:last-of-type{
-  padding-bottom: 20px;
+  padding-bottom: 90px;
   margin-bottom: 0;
 }
 
@@ -453,6 +461,7 @@ img.resume{
 }
 
 .p-btn {
+  cursor: pointer;
   width: 55%;
   position: relative;
   top: 5px;
@@ -461,11 +470,18 @@ img.resume{
   padding: 2px;
   border: 2px solid #380036;
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: white;
+  /*background-color: rgba(255, 255, 255, 0.5);*/
   font-family: 'Paytone One', sans-serif;
   font-weight: bold;
   color: #FF00AA;
   outline-color: #FF00AA;
+}
+
+.p-tool-tip{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 .contact{
