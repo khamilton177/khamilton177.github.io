@@ -407,7 +407,7 @@ img.resume{
   z-index: 1;
 }
 
-.circle:hover, .circle:active {
+.circle:hover{
   background: #380036;
   border: 5px solid #380036;
   -webkit-transform: scale(1.5);
