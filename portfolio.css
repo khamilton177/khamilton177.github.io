@@ -76,7 +76,7 @@ body{
   height: 100%;
   margin: 0 auto;
   overflow-y: scroll;
-  /*overflow-x: hidden;*/
+  overflow-x: hidden;
   color: #380036;
   font-family: 'Raleway', sans-serif;
 }
@@ -205,7 +205,6 @@ img.resume{
 }
 
 .sect-titles{
-  /*position: absolute;*/
   position: relative;
   top: 0;
   left: 0;
@@ -295,8 +294,6 @@ img.resume{
   width: 80%;
   margin: 0 auto;
   padding-top: 20px;
-  /*margin-left: 5px;
-  margin-right: 5px;*/
 }
 
 .intro p:first-of-type{
@@ -464,7 +461,6 @@ img.resume{
   border: 2px solid #380036;
   border-radius: 5px;
   background-color: white;
-  /*background-color: rgba(255, 255, 255, 0.5);*/
   font-family: 'Paytone One', sans-serif;
   font-weight: bold;
   color: #FF00AA;
@@ -533,12 +529,7 @@ img.resume{
     margin-top: 20px;
   }
 
-  #home{
-    /*background-size: 100% 100%;*/
-  }
-
   #home-title-name{
-    /*margin-top: 250px;*/
     font-size: 19px;
   }
 
@@ -570,9 +561,6 @@ img.resume{
   }
 
   .nav-mobile-bar{
-    /*position: absolute;*/
-    /*top: 80px;*/
-    /*left: 0;*/
     height: 100vh;
     position: absolute;
     top: 0;
@@ -581,16 +569,11 @@ img.resume{
     padding: 20px 40px 0 20px;
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
-    /*height: 100%;
-    height: calc(100% + 60px);
-    height: -moz-calc(100%);*/
     background-color: #fff;
     z-index: 999;
     overflow-y: auto;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    /*-webkit-transform: translateX(-105%);
-    transform: translateX(-105%);*/
   }
 
   .nav-mobile-bar >.nav-li, .nav-a{
@@ -627,7 +610,6 @@ img.resume{
 
   .the-tea, .the-extra-tea{
     width: 150px;
-    /*height: 55px;*/
     font-size: 7pt;
   }
 
@@ -644,7 +626,6 @@ img.resume{
   }
 
   #home-title-name{
-    /*margin-top: 255px;*/
     font-size: 35px;
   }
 
@@ -692,7 +673,6 @@ img.resume{
 
   .the-tea, .the-extra-tea{
     width: 160px;
-    /*height: 80px;*/
     font-size: 8pt;
   }
 
@@ -705,7 +685,6 @@ img.resume{
 @media (min-width: 1301px){
 
   #home-title-name{
-    /*margin-top: 210px;*/
     font-size: 45px;
   }
 
@@ -749,7 +728,6 @@ img.resume{
 
   .the-tea, .the-extra-tea{
     width: 200px;
-    /*height: 100px;*/
     font-size: 8pt;
   }
 
