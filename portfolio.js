@@ -73,6 +73,8 @@ document.addEventListener("DOMContentLoaded", function(){
         navIcon=document.querySelector("#nav-mobile-bar-icon");
         navIcon.classList.add("nav-mobile-menu-fixed");
         navMobileCheck.classList.add("nav-mobile-menu-fixed");
+        //  Closes the mobile nav bar on scroll if it is opened
+        navMobileCheck.checked=false;
       }
     }
     else{
