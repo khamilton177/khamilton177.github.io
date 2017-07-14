@@ -397,6 +397,10 @@ img.resume{
   z-index: 1;
 }
 
+.circle button{
+  display: none;
+}
+
 .circle:hover, .circle:active {
   background: #380036;
   border: 5px solid #380036;
@@ -451,7 +455,7 @@ img.resume{
 }
 
 .p-btn {
-  cursor: pointer;
+  cursor: not-allowed;
   width: 55%;
   position: relative;
   top: 5px;
@@ -602,6 +606,10 @@ img.resume{
     width: 150px;
     height: 150px;
   }
+  /*
+  .circle:active button{
+    display: block;
+  }*/
 
   .imgs{
     width: 140px;
