@@ -455,7 +455,7 @@ img.resume{
 }
 
 .p-btn {
-  cursor: not-allowed;
+  cursor: pointer;
   width: 55%;
   position: relative;
   top: 5px;
