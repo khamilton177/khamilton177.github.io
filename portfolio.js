@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", function(){
   var imgs=document.querySelectorAll(".imgs");
   var aboutBtn=document.querySelectorAll(".p-btn");
   var scrollUpBtn=document.querySelector("#scroll-up");
+  var aboutModalArrow=document.querySelector(".arrow-wrapper");
+  var aboutModalInstruct=document.querySelector(".about-instruction");
 
   var win=window;
   var cnt; //  Counter used in loops
@@ -36,6 +38,16 @@ document.addEventListener("DOMContentLoaded", function(){
       if (element.scrollTop == to) return;
       scrollUp(element, to, duration - 10);
     }, 10);
+  }
+
+  var removeModal=function(){
+    //  Get rid of the modals when first hover is Done
+    aboutModalArrow.style.display="none";
+    aboutModalInstruct.style.display="none";
+    //  Remove the eventListner from circles
+    for (cnt=0; circles.length > cnt; cnt++){
+      circles[cnt].removeEventListener("mouseenter", removeModal);
+    };
   }
 
   //  Set Home Screen to Window Width and Height on Window Resize
@@ -107,17 +119,9 @@ document.addEventListener("DOMContentLoaded", function(){
     scrollUp(document.body, 0, 600);
   });
 
-  // for (cnt=0; imgs.length > cnt; cnt++){
-  //   imgs[cnt].addEventListener("click", function(event){
-  //     var imgName=event.target.id;
-  //     // console.log("click "+imgName);
-  //     var circle=document.querySelector("div#"+imgName);
-  //     circle.setActive();
-  //     // console.log("active- "+circle);
-  //   });
-  // }
-
   for (cnt=0; circles.length > cnt; cnt++){
+    circles[cnt].addEventListener("mouseover", removeModal);
+
     circles[cnt].addEventListener("mouseenter", function(event){
       var circleName=event.target.id;
       // console.log("enter "+circleName);
@@ -127,6 +131,7 @@ document.addEventListener("DOMContentLoaded", function(){
       img.style.opacity=0;
       tea.classList.add("animate-fade-in");
       var btn=document.querySelector("#"+circleName+" button");
+      //  Display button after fade-in
       setTimeout(function(){
         btn.style.display="block";
       },2000);

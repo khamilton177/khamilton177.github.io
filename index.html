@@ -26,7 +26,6 @@
           <input id="nav-mobile-bar-checkBox" type="checkbox">
           <div id="nav-bar" class="nav-bar">
             <h2 id="nav-title-name" class="nav-titles">Kerry J. Hamilton</h2>
-            <!-- <a id="home-nav-btn" class="nav-a" href="index.html"><h2 id="nav-title-name" class="nav-titles">Kerry J. Hamilton</h2></a> -->
             <div class="nav-bar-wrapper">
               <ul id="nav-ul" class="nav-full-bar">
                 <li class="nav-li">
@@ -130,6 +129,12 @@
             <div class="projects">
               <article class="proj-articles">
                 <div class="proj-details">
+                  <div class="modal">
+                    <i class="fa fa-arrows-alt modal-close-icon fa-2x" aria-hidden="true"></i>
+                    <p class="modal-para">
+                      Ruby on Rails, Google Oauth2 and Geolocation API's, Twilio API, SendGrid APIS's, Chart.js, JavaScript, JQuery, Animate.css, and Materialize.
+                    </p>
+                  </div>
                   <div class="proj-links-wrap">
                     <a href="http://rockawayicelady.herokuapp.com" target="_blank" id="rockice-app" class="proj-links">Launch RockawayIce</a>
                     <a href="http://github.com/khamilton177/RockawayIce" target="_blank" id="rockice-git" class="proj-links">RockawayIce on GitHub</a>
@@ -139,6 +144,12 @@
                 </div>
               </article>
               <article class="proj-articles">
+                <div class="modal">
+                  <i class="fa fa-arrows-alt modal-close-icon" aria-hidden="true"></i>
+                    <p class="modal-para">
+                      Ruby on Rails, Google Oauth2 and Geolocation API's, Twilio API, SendGrid APIS's, Chart.js, JavaScript, JQuery, Animate.css, and Materialize.
+                    </p>
+                </div>
                 <div class="proj-details">
                   <div class="proj-links-wrap">
                     <a id="vanna-app" class="proj-links">OdetoVannaWhite </a>
@@ -146,12 +157,16 @@
                   </div>
                   <video id="vanna-vid" class="proj-container" src="./images/vannawhite-win.mp4" type="video/mp4" controls preload="auto" autoplay loop>
                   </video>
-                  <!-- <video id="vanna-vid" class="proj-container" src="./images/vannawhite-win.mp4" type="video/mp4" controls preload="auto" poster="./images/vannawhite-win.gif">
-                  </video> -->
                 </div>
               </article>
               <article class="proj-articles">
                 <div class="proj-details">
+                  <div class="modal">
+                    <i class="fa fa-arrows-alt modal-close-icon" aria-hidden="true"></i>
+                    <p class="modal-para">
+                      Ruby on Rails, Devise.
+                    </p>
+                  </div>
                   <div class="proj-links-wrap">
                     <a id="horo-app" class="proj-links">HoroscopeSympatico</a>
                     <a id="horo-git" class="proj-links">HoroscopeSympatico on Github</a>
@@ -166,7 +181,15 @@
               <h2 class="sect-titles">Random Facts About Me</h2>
               <hr>
             </div>
-            <div class="about">
+            <!-- <div class="about about-modal">
+              Hover Over Images for Random Facts About Me
+            </div> -->
+            <div class="about arrow-wrapper">
+              <div class="curved-arrow">
+              </div>
+            </div>
+            <span class="about-instruction">Hover Over Images for Random Facts About Me</span>
+              <!-- <i class="fa fa-arrows-alt modal-close-icon" aria-hidden="true"></i> -->
               <article>
                 <div id="pig" class="circle">
                   <p class="the-tea">
@@ -190,7 +213,7 @@
                     <BR>
                     We both always have a wacky plan.
                     <BR>
-                    We love to sing <strong>...AND WILL LOUDLY</strong>, but really shouldn’t :-(.
+                    We love to sing <strong>...AND WILL LOUDLY</strong>, but really shouldn’t.
                   <button name="lucy" type="button" class="p-btn">Trivia</button>
                   </p>
                   <p class="the-extra-tea">
