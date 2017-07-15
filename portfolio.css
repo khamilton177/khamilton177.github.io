@@ -195,6 +195,7 @@ img.resume{
 
 .modal{
   display: none;
+  min-width: 300px;
   width: 50%;
   height: 95%;
   position: absolute;
@@ -406,19 +407,6 @@ img.resume{
 .about{
   display: flex;
   padding: 20px 0;
-}
-
-.arrow-wrapper{
-  position: absolute;
-  top: 30%;
-  right: 40%;
-  display: inline-block;
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
-  z-index: 1000;
 }
 
 .about-instruction{
@@ -683,15 +671,24 @@ img.resume{
     max-height: 300px;
   }
 
+  .arrow-wrapper{
+    position: absolute;
+    top: 30%;
+    right: 40%;
+    display: inline-block;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    z-index: 1000;
+  }
+
   .circle{
     cursor: pointer;
     width: 150px;
     height: 150px;
   }
-  /*
-  .circle:active button{
-    display: block;
-  }*/
 
   .imgs{
     width: 140px;
@@ -750,6 +747,19 @@ img.resume{
       max-height: 300px;
   }
 
+  .arrow-wrapper{
+    position: absolute;
+    top: 30%;
+    right: 40%;
+    display: inline-block;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    z-index: 1000;
+  }
+
   .circle{
     cursor: pointer;
     width: 160px;
@@ -804,6 +814,20 @@ img.resume{
       width: 410px;
       height: 410px;
       border: 5px solid white;
+  }
+
+  .arrow-wrapper{
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    display: inline-block;
+    z-index: 1000;
+  }
+
+  .about-instruction{
+    position: absolute;
+    top: 38%;
+    right: 10%;
   }
 
   .circle{
