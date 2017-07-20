@@ -56,6 +56,7 @@ document.addEventListener("DOMContentLoaded", function(){
   //  Find Scroll Position and transform NavBar to Fixed
   win.addEventListener("scroll", function(event){
     if(!home){
+      //  Height of Nav bar
       var px=110;
     }
     else if (home.style.height != ""){
