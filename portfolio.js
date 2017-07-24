@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", function(){
   });
 
   for (cnt=0; circles.length > cnt; cnt++){
-    circles[cnt].addEventListener("mouseenter", removeModal);
+    circles[cnt].addEventListener("mouseover", removeModal);
 
     circles[cnt].addEventListener("mouseenter", function(event){
       var circleName=event.target.id;
