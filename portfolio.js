@@ -12,16 +12,31 @@ document.addEventListener("DOMContentLoaded", function(){
   var scrollUpBtn=document.querySelector("#scroll-up");
   var aboutModalArrow=document.querySelector(".arrow-wrapper");
   var aboutModalInstruct=document.querySelector(".about-instruction");
+  var ieModal=document.querySelector(".ie-modal");
 
   var win=window;
   var cnt; //  Counter used in loops
   var navIcon;  //  holder for small screen menu
 
+  // Test for Internet Explorer 6-11 browser since CSS animation not working in it yet.
+  var isIE = /*@cc_on!@*/false || !!document.documentMode;
+  // console.log("Browser is IE? or Egde"+isIE+" "+isEdge)
+  if (isIE){
+    ieModal.style.display="block";
+    ieModal.innerHTML="This site is not fully compatible with IE.  Please open in another browser.";
+  }
+
   //  Set Home Screen to Window Width and Height on Load
   function resizeElement(){
     var x=win.innerWidth||docBody.clientWidth;
     var y=win.innerHeight||docBody.clientHeight;
-    home.style.height=y+"px";
+    if(!home){
+      //  Height of Nav bar
+      var px=110;
+    }
+    else{
+      home.style.height=y+"px";
+    }
     // console.log(x+","+y);
     //  Make sure to 'uncheck' mobile menu on resize
     navMobileCheck.checked=false;
@@ -30,6 +45,7 @@ document.addEventListener("DOMContentLoaded", function(){
   var scrollUp=function(element, to, duration) {
     if (duration <= 0) return;
     var move = to - element.scrollTop;
+    // console.log("body- "+element.scrollTop)
     // console.log("moving-"+ move);
     var perpx = move / duration * 10;
 
@@ -121,12 +137,12 @@ document.addEventListener("DOMContentLoaded", function(){
   });
 
   for (cnt=0; circles.length > cnt; cnt++){
-    circles[cnt].addEventListener("mouseover", removeModal);
+    circles[cnt].addEventListener("mouseenter", removeModal);
 
     circles[cnt].addEventListener("mouseenter", function(event){
       var circleName=event.target.id;
       // console.log("enter "+circleName);
-      var img=document.querySelector("img#"+circleName);
+      var img=document.querySelector("img#"+circleName+"-img");
       var tea=document.querySelector("div#"+circleName+" p.the-tea");
       // console.log(img);
       img.style.opacity=0;
@@ -141,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function(){
     circles[cnt].addEventListener("mouseleave", function(event){
       var circleName=event.target.id;
       // console.log("leave "+circleName);
-      var img=document.querySelector("img#"+circleName);
+      var img=document.querySelector("img#"+circleName+"-img");
       var tea=document.querySelector("div#"+circleName+" p.the-tea");
       var btn=document.querySelector("#"+circleName+" button");
       btn.style.display="none";
@@ -156,6 +172,7 @@ document.addEventListener("DOMContentLoaded", function(){
       event.preventDefault();
       var btnName=event.target.name;
       // console.log(btnName);
+      //  flip the image with the corresponding button name.
       document.querySelector("#"+btnName).classList.add("animate-flip");
     });
  }
