@@ -419,9 +419,13 @@ img.resume{
 }
 
 .proj-links{
-  display: block;
+  display: inline-block;
   padding: 10px;
   text-decoration: none;
+  font-weight: bold;
+}
+
+.proj-span{
   font-weight: bold;
 }
 
@@ -447,9 +451,9 @@ img.resume{
 
 .horo{
   /*background-image: url("./images/vannawhite-win.gif");*/
-  background-repeat: no-repeat;
+  /*background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center;*/
 }
 
 .proj-modal{
