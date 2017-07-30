@@ -153,11 +153,12 @@ document.addEventListener("DOMContentLoaded", function(){
   for (cnt=0; projContainer.length > cnt; cnt++){
     //  show modal when hover over container
     projContainer[cnt].addEventListener("mouseenter", function(event){
+      event.preventDefault();
       var modalName=event.target.id;
       // console.log("name "+modalName);
       var projModal=document.querySelector("#"+modalName+"-modal");
       projModal.classList.add("proj-modal-show");
-    }, false)
+    })
 
     //  Close modal using i tag
     projModalClose[cnt].addEventListener("click", function(event){
