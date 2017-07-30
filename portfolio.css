@@ -436,22 +436,22 @@ img.resume{
 }
 
 .rockice{
-  background-image: url("./images/wheres_cart-Rock.gif");
+  background-image: url("./images/rockice.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .vanna{
-  background-image: url("./images/vannawhite-play.gif");
+  background-image: url("./images/vannawhite.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .horo{
-  /*background-image: url("./images/vannawhite-win.gif");*/
-  /*background-repeat: no-repeat;
+  /*background-image: url("./images/vannawhite.png");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;*/
 }
