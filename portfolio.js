@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function(){
       // console.log("name "+modalName);
       var projModal=document.querySelector("#"+modalName+"-modal");
       projModal.classList.add("proj-modal-show");
-    })
+    }, false)
 
     //  Close modal using i tag
     projModalClose[cnt].addEventListener("click", function(event){
