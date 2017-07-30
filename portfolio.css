@@ -845,10 +845,6 @@ figcaption {
     max-height: 300px;
   }
 
-  .proj-container:hover, .proj-container:active{
-    cursor: pointer;
-  }
-
 /*
   .arrow-wrapper{
     position: absolute;
@@ -987,10 +983,6 @@ figcaption {
     cursor: pointer;
     max-width: 300px;
     max-height: 300px;
-  }
-
-  .proj-container:hover, .proj-container:active{
-    cursor: pointer;
   }
 
   .circle{
