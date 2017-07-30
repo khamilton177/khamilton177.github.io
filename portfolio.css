@@ -46,31 +46,31 @@ Icterine- #FEF65B;
 
 @-webkit-keyframes flip{
   0% {
-    -webkit-transform: rotateY(0) scale(1.5);
-    -moz-transform: rotateY(0) scale(1.5);
-    -o-transform: rotateY(0) scale(1.5);
-    transform: rotateY(0) scale(1.5);
+    -webkit-transform: translate3d(0, 0, 0) rotateY(0) scale(1.5);
+    -moz-transform: translate3d(0, 0, 0) rotateY(0) scale(1.5);
+    -o-transform: translate3d(0, 0, 0) rotateY(0) scale(1.5);
+    transform: translate3d(0, 0, 0) rotateY(0) scale(1.5);
   }
   100% {
-    -webkit-transform: translate(0, 0) rotateY(180deg) scale(1.5);
-    -moz-transform: translate(0, 0) rotateY(180deg) scale(1.5);
-    -o-transform: translate(0, 0) rotateY(180deg) scale(1.5);
-    transform: translate(0, 0) rotateY(180deg) scale(1.5);
+    -webkit-transform: translate3d(0, 0, 0) rotateY(180deg) scale(1.5);
+    -moz-transform: translate3d(0, 0, 0) rotateY(180deg) scale(1.5);
+    -o-transform: translate3d(0, 0, 0) rotateY(180deg) scale(1.5);
+    transform: translate3d(0, 0, 0) rotateY(180deg) scale(1.5);
   }
 }
 
 @keyframes flip{
   0% {
-    -webkit-transform: translate(0, 0) rotateY(0) scale(1.5);
-    -moz-transform: translate(0, 0) rotateY(0) scale(1.5);
-    -o-transform: translate(0, 0) rotateY(0) scale(1.5);
-    transform: translate(0, 0) rotateY(0) scale(1.5);
+    -webkit-transform: translate3d(0, 0, 0) rotateY(0) scale(1.5);
+    -moz-transform: translate3d(0, 0, 0) rotateY(0) scale(1.5);
+    -o-transform: translate3d(0, 0, 0) rotateY(0) scale(1.5);
+    transform: translate3d(0, 0, 0) rotateY(0) scale(1.5);
   }
   100% {
-    -webkit-transform: translate(0, 0) rotateY(180deg) scale(1.5);
-    -moz-transform: translate(0, 0) rotateY(180deg) scale(1.5);
-    -o-transform: translate(0, 0) rotateY(180deg) scale(1.5);
-    transform: translate(0, 0) rotateY(180deg) scale(1.5);
+    -webkit-transform: translate3d(0, 0, 0) rotateY(180deg) scale(1.5);
+    -moz-transform: translate3d(0, 0, 0) rotateY(180deg) scale(1.5);
+    -o-transform: translate3d(0, 0, 0) rotateY(180deg) scale(1.5);
+    transform: translate3d(0, 0, 0) rotateY(180deg) scale(1.5);
   }
 }
 
