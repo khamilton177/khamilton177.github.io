@@ -840,9 +840,15 @@ figcaption {
   }
 
   .proj-container, .proj-modal {
+    cursor: pointer;
     max-width: 300px;
     max-height: 300px;
   }
+
+  .proj-container:active{
+    cursor: pointer;
+  }
+
 /*
   .arrow-wrapper{
     position: absolute;
@@ -978,8 +984,13 @@ figcaption {
   }
 
   .proj-container, .proj-modal {
+    cursor: pointer;
     max-width: 300px;
     max-height: 300px;
+  }
+
+  .proj-container:active{
+    cursor: pointer;
   }
 
   .circle{
