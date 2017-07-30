@@ -845,7 +845,7 @@ figcaption {
     max-height: 300px;
   }
 
-  .proj-container:active{
+  .proj-container:hover, .proj-container:active{
     cursor: pointer;
   }
 
@@ -989,7 +989,7 @@ figcaption {
     max-height: 300px;
   }
 
-  .proj-container:active{
+  .proj-container:hover, .proj-container:active{
     cursor: pointer;
   }
 
