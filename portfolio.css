@@ -37,11 +37,11 @@ Icterine- #FEF65B;
 
 @-webkit-keyframes flip{
   0% {
-    -ms-transform: rotateY(0) scale(1.5);
-    -webkit-transform: rotateY(0) scale(1.5);
-    -moz-transform: rotateY(0) scale(1.5);
-    -o-transform: rotateY(0) scale(1.5);
-    transform: rotateY(0) scale(1.5);
+    -ms-transform: translate(0, 0) rotateY(0) scale(1.5);
+    -webkit-transform: translate(0, 0) rotateY(0) scale(1.5);
+    -moz-transform: translate(0, 0) rotateY(0) scale(1.5);
+    -o-transform: translate(0, 0) rotateY(0) scale(1.5);
+    transform: translate(0, 0) rotateY(0) scale(1.5);
   }
   100% {
     -ms-transform: translate(0, 0) rotateY(180deg) scale(1.5);
@@ -54,11 +54,11 @@ Icterine- #FEF65B;
 
 @keyframes flip{
   0% {
-    -ms-transform: rotateY(0) scale(1.5);
-    -webkit-transform: rotateY(0) scale(1.5);
-    -moz-transform: rotateY(0) scale(1.5);
-    -o-transform: rotateY(0) scale(1.5);
-    transform: rotateY(0) scale(1.5);
+    -ms-transform: translate(0, 0) rotateY(0) scale(1.5);
+    -webkit-transform: translate(0, 0) rotateY(0) scale(1.5);
+    -moz-transform: translate(0, 0) rotateY(0) scale(1.5);
+    -o-transform: translate(0, 0) rotateY(0) scale(1.5);
+    transform: translate(0, 0) rotateY(0) scale(1.5);
   }
   100% {
     -ms-transform: translate(0, 0) rotateY(180deg) scale(1.5);
@@ -127,12 +127,17 @@ a{
 
 a.resume{
   width: 100px;
-  padding-bottom: 20px;
+  padding-bottom: 60px;
   text-decoration: none;
   text-align: center;
   font-weight: bold;
   color: #380036;
 }
+
+/*a.resume:hover, a.resume:focus, a.nav-a:hover, a.nav-a:focus{
+  background-color: white;
+  opacity: .4;
+}*/
 
 img.resume{
   padding-bottom: 20px;
@@ -179,13 +184,13 @@ img.resume{
 
 #projects{
   background-color: #D3BCCC;
-  border-top: 35px solid #D3BCCC;
+  /*border-top: 35px solid #D3BCCC;*/
   /*border-bottom: 35px solid white;*/
 }
 
 #about{
   background-color: #FF00AA;
-  border-top: 35px solid #FF00AA;
+  /*border-top: 35px solid #FF00AA;*/
   /*border-bottom: 35px solid white;*/
 }
 
@@ -207,30 +212,6 @@ img.resume{
   position: relative;
 }
 
-.modal{
-  display: none;
-  min-width: 300px;
-  width: 50%;
-  height: 95%;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  margin: 0 auto;
-  background-color: rgb(254, 246, 91);
-  opacity: .6;
-}
-
-.modal-close-icon{
-  cursor: pointer;
-  float: right;
-  margin: 10px;
-}
-
-.modal-para{
-  margin: 0 auto;
-}
-
 /*Auto Create Evenly Alotted Initial Divs for Main Section*/
 .main-container > .sect{
   width: 100%;
@@ -248,9 +229,10 @@ img.resume{
   left: 0;
   right: 0;
   text-align: center;
-  margin: 90px 0px 20px 0px;
+  margin: 0px 0px 20px 0px;
+  padding-top: 110px;
   color: white;
-  font-family: 'Megrim', cursive;
+  font-family: 'Raleway', sans-serif;
 }
 
 .home-titles-wrap{
@@ -344,22 +326,26 @@ img.resume{
 }
 
 .skills{
-  border-top: 35px solid rgba(185, 142, 167, 0);
+  /*border-top: 35px solid rgba(185, 142, 167, 0);*/
   /*border-bottom: 35px solid white;*/
   background-color: rgba(185, 142, 167, 0.4);
 }
 
-.skills-article{
+.skills p{
+  padding: 0 15px;
+}
+
+/*.skills-article{
   display: flex;
   align-items: center;
   justify-content: center;
-}
+}*/
 
 .skills-titles{
   width: 100%;
   text-align: center;
-  font-family: 'Paytone One', sans-serif;
-  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+  /*color: white;*/
 }
 
 .skills-ul{
@@ -367,9 +353,24 @@ img.resume{
   font-weight: bold;
 }
 
-.resume{
-  display: block;
+.skills-wrapper{
+  width: 80%;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.full{
+  width: 80%;
+  margin: 0 auto;
+  padding: 16px 0;
+  background-color: #FFB5FD;
+  box-shadow: 5px 5px 7px rgba(255, 181, 253, 0.5);
+}
+
+.icon-div{
+  text-align: center;
 }
 
 .front, .back, .other{
@@ -377,6 +378,7 @@ img.resume{
   height: 300px;
   position: relative;
   margin: 20px;
+  padding: 16px 0;
   display: inline-block;
 }
 
@@ -393,6 +395,11 @@ img.resume{
 .other{
   background-color: #D3BCCC;
   box-shadow: 5px 5px 7px rgba(211, 188, 204, 0.5);
+}
+
+.resume{
+  display: block;
+  margin: 0 auto;
 }
 
 .projects{
@@ -418,9 +425,74 @@ img.resume{
   font-weight: bold;
 }
 
+.proj-container{
+    width: 410px;
+    height: 410px;
+    border: 5px solid white;
+}
+
+.rockice{
+  background-image: url("./images/wheres_cart-Rock.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.vanna{
+  background-image: url("./images/vannawhite-play.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.horo{
+  /*background-image: url("./images/vannawhite-win.gif");*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.proj-modal{
+  display: none;
+  width: 410px;
+  height: 410px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(255, 181, 253, 0.8);
+}
+
+.proj-modal-show, .proj-modal:active{
+  display: block;
+}
+
+.modal-close-icon{
+  cursor: pointer;
+  position: relative;
+  top: 60px;
+}
+
+.proj-modal-title{
+  /*position: relative;
+  top: 10px;*/
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.proj-modal-para{
+  position: relative;
+  top: 15%;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+}
+
 .about{
   display: flex;
-  padding: 20px 0;
+  padding: 20px 0 60px 0;
 }
 
 .about-instruction{
@@ -549,7 +621,7 @@ img.resume{
   border: 2px solid #380036;
   border-radius: 5px;
   background-color: white;
-  font-family: 'Paytone One', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-weight: bold;
   color: #FF00AA;
   outline-color: #FF00AA;
@@ -563,7 +635,6 @@ img.resume{
 
 .contact{
   padding: 20px 0;
-  /*border-top: 35px solid white;*/
   background-color: #B98EA7;
 }
 
@@ -697,9 +768,9 @@ figcaption {
 /*--------------------Portfolio Page Elements-------------------*/
 @media (max-width: 768px){
 
-  article:nth-of-type(1){
+  /*article:nth-of-type(1){
     margin-top: 20px;
-  }
+  }*/
 
   #home-title-name{
     font-size: 19px;
@@ -707,7 +778,7 @@ figcaption {
 
   #home-title{
     margin-top: 0;
-    font-family: 'Paytone One', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     font-size: 24px;
   }
 
@@ -760,15 +831,15 @@ figcaption {
     font-size: 15px;
   }
 
-  .skills-article, .projects, .about{
+ .projects{
     flex-wrap: wrap;
   }
 
-  .proj-container {
+  .proj-container, .proj-modal {
     max-width: 300px;
     max-height: 300px;
   }
-
+/*
   .arrow-wrapper{
     position: absolute;
     top: 30%;
@@ -780,7 +851,7 @@ figcaption {
     -o-transform: rotate(180deg);
     transform: rotate(180deg);
     z-index: 1000;
-  }
+  }*/
 
   .circle{
     cursor: pointer;
@@ -830,11 +901,47 @@ figcaption {
 
 /*  Medium/Tablet Screens */
 /*--------------------Portfolio Page Elements-------------------*/
+@media (max-width: 1000px) {
+
+   .skills-wrapper, .about{
+    flex-wrap: wrap;
+  }
+
+  .front, .back, .other{
+    width: 100%;
+    height: auto;
+  }
+
+  .arrow-wrapper{
+    position: absolute;
+    top: 30%;
+    right: 40%;
+    display: inline-block;
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    z-index: 1000;
+  }
+}
+
+@media (min-width: 1001px) {
+
+  .arrow-wrapper{
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    display: inline-block;
+    z-index: 1000;
+  }
+}
+
 @media (min-width: 769px) and (max-width: 1300px) {
 
-  article:nth-of-type(1){
+  /*article:nth-of-type(1){
     margin-top: 20px;
-  }
+  }*/
 
   #home-title-name{
     font-size: 35px;
@@ -842,7 +949,7 @@ figcaption {
 
   #home-title{
     margin-top: 0px;
-    font-family: 'Paytone One', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     font-size: 45px;
   }
 
@@ -862,26 +969,13 @@ figcaption {
     font-size: 18px;
   }
 
-  .skills-article, .projects, .about{
+  .projects{
     flex-wrap: wrap;
   }
 
-  .proj-container {
-      max-width: 300px;
-      max-height: 300px;
-  }
-
-  .arrow-wrapper{
-    position: absolute;
-    top: 30%;
-    right: 40%;
-    display: inline-block;
-    -ms-transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    transform: rotate(180deg);
-    z-index: 1000;
+  .proj-container, .proj-modal {
+    max-width: 300px;
+    max-height: 300px;
   }
 
   .circle{
@@ -940,7 +1034,7 @@ figcaption {
 
   #home-title{
     margin-top: 0;
-    font-family: 'Paytone One', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     font-size: 55px;
   }
 
@@ -958,20 +1052,6 @@ figcaption {
 
   .intro p, .contact p{
     font-size: 20px;
-  }
-
-  .proj-container{
-      width: 410px;
-      height: 410px;
-      border: 5px solid white;
-  }
-
-  .arrow-wrapper{
-    position: absolute;
-    top: 50%;
-    right: 20%;
-    display: inline-block;
-    z-index: 1000;
   }
 
   .about-instruction{

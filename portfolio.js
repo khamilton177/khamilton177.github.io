@@ -6,6 +6,11 @@ document.addEventListener("DOMContentLoaded", function(){
   var home=document.querySelector("#home");
   var nav=document.querySelector("#nav-bar");
   var navMobileCheck=document.querySelector("#nav-mobile-bar-checkBox");
+  var projContainer=document.querySelectorAll(".proj-container");
+  var projModalClose=document.querySelectorAll(".modal-close-icon");
+  var frontEnd=document.querySelector(".front");
+  var backEnd=document.querySelector(".back");
+  var other=document.querySelector(".other");
   var circles=document.querySelectorAll(".circle");
   var imgs=document.querySelectorAll(".imgs");
   var aboutBtn=document.querySelectorAll(".p-btn");
@@ -40,6 +45,15 @@ document.addEventListener("DOMContentLoaded", function(){
     // console.log(x+","+y);
     //  Make sure to 'uncheck' mobile menu on resize
     navMobileCheck.checked=false;
+
+    //  Get height of tallest skills div and set other two to same
+    var skillsHeight=backEnd.clientHeight;
+    //  Need to minus 32 from clientHeight before applying
+    skillsHeight-=32;
+    skillsHeight+="px";
+    // console.log("skills height- "+skillsHeight);
+    frontEnd.style.height=skillsHeight;
+    other.style.height=skillsHeight;
   }
 
   var scrollUp=function(element, to, duration) {
@@ -135,6 +149,24 @@ document.addEventListener("DOMContentLoaded", function(){
     event.preventDefault();
     scrollUp(document.body, 0, 600);
   });
+
+  for (cnt=0; projContainer.length > cnt; cnt++){
+    //  show modal when hover over container
+    projContainer[cnt].addEventListener("mouseenter", function(event){
+      var modalName=event.target.id;
+      // console.log("name "+modalName);
+      var projModal=document.querySelector("#"+modalName+"-modal");
+      projModal.classList.add("proj-modal-show");
+    })
+
+    //  Close modal using i tag
+    projModalClose[cnt].addEventListener("click", function(event){
+      var modalName=this.parentNode.id;
+      // console.log("CLICKED "+modalName);
+      var projModal=document.querySelector("#"+modalName);
+      projModal.classList.remove("proj-modal-show");
+    })
+  }
 
   for (cnt=0; circles.length > cnt; cnt++){
     circles[cnt].addEventListener("mouseover", removeModal);
