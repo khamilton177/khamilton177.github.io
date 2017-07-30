@@ -127,7 +127,7 @@ a{
 
 a.resume{
   width: 100px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   text-decoration: none;
   text-align: center;
   font-weight: bold;
@@ -634,7 +634,7 @@ img.resume{
 }
 
 .contact{
-  padding: 20px 0;
+  padding-bottom: 40px;
   background-color: #B98EA7;
 }
 
