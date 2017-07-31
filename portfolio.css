@@ -441,10 +441,10 @@ img.resume{
 }
 
 .proj-container:hover, .proj-container:active{
-  border: 5px solid rgba(255, 181, 253, 0.8);
+  border: 5px solid white;
 }
 
-.rockice{
+/*.rockice{
   background-image: url("./images/rockice.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -459,26 +459,33 @@ img.resume{
 }
 
 .horo{
-  /*background-image: url("./images/vannawhite.png");
+  background-image: url("./images/vannawhite.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;*/
+  background-position: center;
+}*/
+
+.proj-hold{
+  position: relative;
 }
 
 .proj-modal{
-  display: none;
+  opacity: 0;
   width: 410px;
   height: 410px;
+  position: absolute;
   top: 0px;
   left: 0px;
   right: 0px;
   margin: 0 auto;
   text-align: center;
   background-color: rgba(255, 181, 253, 0.8);
+  border: 5px solid rgba(255, 181, 253, 0.8);
+  z-index: 1000;
 }
 
-.proj-modal-show{
-  display: block;
+.proj-modal:hover, .proj-modal:active, .proj-modal-show{
+  opacity: 1;
 }
 
 .modal-close-icon{

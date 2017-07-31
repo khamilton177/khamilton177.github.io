@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function(){
   var home=document.querySelector("#home");
   var nav=document.querySelector("#nav-bar");
   var navMobileCheck=document.querySelector("#nav-mobile-bar-checkBox");
-  var projContainer=document.querySelectorAll(".proj-container");
+  var projModal=document.querySelectorAll(".proj-modal");
   var projModalClose=document.querySelectorAll(".modal-close-icon");
   var frontEnd=document.querySelector(".front");
   var backEnd=document.querySelector(".back");
@@ -150,21 +150,21 @@ document.addEventListener("DOMContentLoaded", function(){
     scrollUp(document.body, 0, 600);
   });
 
-  for (cnt=0; projContainer.length > cnt; cnt++){
+  for (cnt=0; projModal.length > cnt; cnt++){
     //  show modal when hover over container
-    projContainer[cnt].addEventListener("mouseenter", function(event){
-      var modalName=event.target.id;
+    projModal[cnt].addEventListener("mouseover", function(event){
+      // var modalName=event.target.id;
       // console.log("name "+modalName);
-      var projModal=document.querySelector("#"+modalName+"-modal");
-      projModal.classList.add("proj-modal-show");
+      // var projModal=document.querySelector("#"+modalName+"-modal");
+      // projModal.classList.add("proj-modal-show");
     })
 
     //  Close modal using i tag
     projModalClose[cnt].addEventListener("click", function(event){
-      var modalName=this.parentNode.id;
+      // var modalName=this.parentNode.id;
       // console.log("CLICKED "+modalName);
-      var projModal=document.querySelector("#"+modalName);
-      projModal.classList.remove("proj-modal-show");
+      // var projModal=document.querySelector("#"+modalName);
+      // projModal.classList.remove("proj-modal-show");
     })
   }
 
