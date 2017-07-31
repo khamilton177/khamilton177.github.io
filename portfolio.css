@@ -440,6 +440,10 @@ img.resume{
     border: 5px solid white;
 }
 
+.proj-container:hover, .proj-container:active{
+  border: 5px solid rgba(255, 181, 253, 0.8);
+}
+
 .rockice{
   background-image: url("./images/rockice.png");
   background-repeat: no-repeat;
@@ -473,7 +477,7 @@ img.resume{
   background-color: rgba(255, 181, 253, 0.8);
 }
 
-.proj-modal-show, .proj-modal:active{
+.proj-modal-show{
   display: block;
 }
 
