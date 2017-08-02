@@ -49,7 +49,8 @@ font-size: 12pt;
 }
 
 .links{
-  color: #ff5c5c;
+  color: #FF00AA;
+  /*color: #ff5c5c;*/
   font-size: 11pt !important;
 }
 
@@ -72,4 +73,12 @@ ul.bullets {
 .bold-para{
   font-weight: bold;
   /*color: #666666;*/
+}
+
+.skills{
+  padding: 5px 0;
+  background-color: rgba(185, 142, 167, 0.4);
+}
+.skills ul{
+  margin: 0 .75rem;
 }
