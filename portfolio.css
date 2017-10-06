@@ -514,10 +514,10 @@ img.resume{
 }
 
 .modal-close-icon{
-  display: none;
+  /*display: none;
   cursor: pointer;
   position: relative;
-  top: 60px;
+  top: 60px;*/
 }
 
 .proj-modal-title{
