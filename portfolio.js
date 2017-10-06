@@ -177,13 +177,13 @@ document.addEventListener("DOMContentLoaded", function(){
       // projModal.classList.add("proj-modal-show");
     })
 
-    //  Close modal using i tag
-    projModalClose[cnt].addEventListener("click", function(event){
-      var modalName=event.target.parentNode.id;
-      console.log("CLICKED "+modalName);
-      // var projModal=document.querySelector("#"+modalName);
-      // projModal.classList.remove("proj-modal-show");
-    })
+    // //  Close modal using i tag
+    // projModalClose[cnt].addEventListener("click", function(event){
+    //   var modalName=event.target.parentNode.id;
+    //   console.log("CLICKED "+modalName);
+    //   // var projModal=document.querySelector("#"+modalName);
+    //   // projModal.classList.remove("proj-modal-show");
+    // })
   }
 
   for (cnt=0; circles.length > cnt; cnt++){

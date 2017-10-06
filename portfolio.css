@@ -1,5 +1,4 @@
 /*  Custom fonts and colors
-
 font-family: 'Megrim', cursive;
 font-family: 'Poiret One', cursive;
 font-family: 'Caveat', cursive;
@@ -9,7 +8,6 @@ font-family: 'Rajdhani', sans-serif;
 font-family: 'Baumans', cursive;
 font-family: 'Cinzel Decorative', cursive;
 font-family: 'Paytone One', sans-serif;
-
 Middle Red Purple- #190B28;  For Text
 Thistle- #D3BCCC; || Pink Lace- #F9DBFF;  For Background
 Rhythm- #847996; Use for Header Instead of a gray
@@ -476,14 +474,12 @@ img.resume{
   background-size: cover;
   background-position: center;
 }
-
 .vanna{
   background-image: url("./images/vannawhite.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-
 .horo{
   background-image: url("./images/vannawhite.png");
   background-repeat: no-repeat;
@@ -508,6 +504,9 @@ img.resume{
   background-color: rgba(255, 181, 253, 0.9);
   border: 10px solid rgba(255, 181, 253, 0.9);
   z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .proj-modal:hover, .proj-modal:active, .proj-modal-show{
@@ -515,23 +514,24 @@ img.resume{
 }
 
 .modal-close-icon{
+  display: none;
   cursor: pointer;
   position: relative;
   top: 60px;
 }
 
 .proj-modal-title{
-  /*position: relative;
-  top: 10px;*/
-  margin: 0 auto;
+  position: relative;
+  top: 0px;
+  margin-bottom: 16px;
   text-align: center;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .proj-modal-para{
   position: relative;
-  top: 15%;
-  margin: 0 auto;
+  top: 0px;
+  margin-bottom: 16px;
   text-align: center;
   font-weight: bold;
 }
