@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function(){
   var aboutModalInstruct=document.querySelector(".about-instruction");
   var ieModal=document.querySelector(".ie-modal");
 
-  var win=window;
+  var win = window;
   var cnt; //  Counter used in loops
   var navIcon;  //  holder for small screen menu
 
@@ -28,13 +28,13 @@ document.addEventListener("DOMContentLoaded", function(){
   // console.log("Browser is IE? or Egde"+isIE+" "+isEdge)
   if (isIE){
     ieModal.style.display="block";
-    ieModal.innerHTML="This site is not fully compatible with IE.  Please open in another browser.";
+    ieModal.innerHTML="event.target site is not fully compatible with IE.  Please open in another browser.";
   }
 
   //  Set Home Screen to Window Width and Height on Load
   function resizeElement(){
-    var x=win.innerWidth||docBody.clientWidth;
-    var y=win.innerHeight||docBody.clientHeight;
+    var x=window.innerWidth||docBody.clientWidth;
+    var y=window.innerHeight||docBody.clientHeight;
     if(!home){
       //  Height of Nav bar
       var px=110;
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function(){
     else{
       home.style.height=y+"px";
     }
-    // console.log(x+","+y);
+    console.log(x+","+y);
     //  Make sure to 'uncheck' mobile menu on resize
     navMobileCheck.checked=false;
 
@@ -51,24 +51,41 @@ document.addEventListener("DOMContentLoaded", function(){
     //  Need to minus 32 from clientHeight before applying
     skillsHeight-=32;
     skillsHeight+="px";
-    // console.log("skills height- "+skillsHeight);
+    console.log("skills height- "+skillsHeight);
     frontEnd.style.height=skillsHeight;
     other.style.height=skillsHeight;
   }
 
-  var scrollUp=function(element, to, duration) {
-    if (duration <= 0) return;
-    var move = to - element.scrollTop;
-    // console.log("body- "+element.scrollTop)
-    // console.log("moving-"+ move);
-    var perpx = move / duration * 10;
 
-    setTimeout(function() {
-      element.scrollTop = element.scrollTop + perpx;
-      if (element.scrollTop == to) return;
-      scrollUp(element, to, duration - 10);
-    }, 10);
-  }
+ // Not working in OS X.  Going to use JQuery instead
+  // var scrollUp=function(element, to, duration) {
+  //   if (duration <= 0) return;
+  //   var move = to - element;
+  //   console.log("body- "+element)
+  //   console.log("moving-"+ move);
+  //   var perpx = move / duration * 10;
+  //
+  //   setTimeout(function() {
+  //     element = element + perpx;
+  //     if (element == to) return;
+  //     scrollUp(element, to, duration - 10);
+  //   }, 10);
+  // }
+
+  $('#scroll-up').bind("click", function(event){
+    $('html, body').stop().animate({
+      scrollTop: $('#home').offset().top
+    }, 1000);
+    event.preventDefault();
+  });
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('.scroll-up').fadeIn();
+    } else {
+      $('.scroll-up').fadeOut();
+    }
+  });
 
   var removeModal=function(){
     //  Get rid of the modals when first hover is Done
@@ -98,20 +115,20 @@ document.addEventListener("DOMContentLoaded", function(){
       var px=568;
     }
     px=Number(px);
-    // console.log("Bottom is "+ px);
+    console.log("Bottom is "+ px);
 
-    // Going to use this point in scroll position to hide scrollUpBtn
+    // Going to use event.target point in scroll position to hide scrollUpBtn
     var pxHalfPt=px/2;
-    // console.log("hide at"+ pxHalfPt);
+    console.log("hide at"+ pxHalfPt);
 
-    var offSet=win.pageYOffset;
+    var offSet=window.pageYOffset
 
-    // console.log("Your at "+ offSet);
+    console.log("Your at "+ offSet);
     if (offSet >= px){
       nav.classList.add("nav-fixed");
       // Capture @media scrren width.
-      screenWidth=win.matchMedia("screen and (max-width: 768px)");
-      // console.log("Screen Width"+ screenWidth.matches);
+      screenWidth=window.matchMedia("screen and (max-width: 768px)");
+      console.log("Screen Width"+ screenWidth.matches);
       if (screenWidth.matches){
         //  Add small screen only element.  Done on scroll because element lost on refreshes.
         navIcon=document.querySelector("#nav-mobile-bar-icon");
@@ -124,8 +141,8 @@ document.addEventListener("DOMContentLoaded", function(){
     else{
       nav.classList.remove("nav-fixed");
       // Capture @media scrren width.
-      screenWidth=win.matchMedia("screen and (max-width: 768px)");
-      // console.log("Screen Width"+ screenWidth.matches);
+      screenWidth=window.matchMedia("screen and (max-width: 768px)");
+      console.log("Screen Width"+ screenWidth.matches);
       if (screenWidth.matches){
         //  Add small screen only element.  Done on scroll because element lost on refreshes.
         navIcon=document.querySelector("#nav-mobile-bar-icon");
@@ -145,24 +162,25 @@ document.addEventListener("DOMContentLoaded", function(){
     }
   });
 
-  scrollUpBtn.addEventListener("click", function(event){
-    event.preventDefault();
-    scrollUp(document.body, 0, 600);
-  });
+  // scrollUpBtn.addEventListener("click", function(event){
+  //   event.preventDefault();
+  //   var scrollfrom=window.pageYOffset || document.docBody.scrollTop;
+  //   scrollUp(scrollfrom, 0, 600);
+  // });
 
   for (cnt=0; projModal.length > cnt; cnt++){
     //  show modal when hover over container
     projModal[cnt].addEventListener("mouseover", function(event){
-      // var modalName=event.target.id;
-      // console.log("name "+modalName);
+      var modalName=event.target.id;
+      console.log("name "+modalName);
       // var projModal=document.querySelector("#"+modalName+"-modal");
       // projModal.classList.add("proj-modal-show");
     })
 
     //  Close modal using i tag
     projModalClose[cnt].addEventListener("click", function(event){
-      // var modalName=this.parentNode.id;
-      // console.log("CLICKED "+modalName);
+      var modalName=event.target.parentNode.id;
+      console.log("CLICKED "+modalName);
       // var projModal=document.querySelector("#"+modalName);
       // projModal.classList.remove("proj-modal-show");
     })
@@ -173,10 +191,10 @@ document.addEventListener("DOMContentLoaded", function(){
 
     circles[cnt].addEventListener("mouseenter", function(event){
       var circleName=event.target.id;
-      // console.log("enter "+circleName);
+      console.log("enter "+circleName);
       var img=document.querySelector("img#"+circleName+"-img");
       var tea=document.querySelector("div#"+circleName+" p.the-tea");
-      // console.log(img);
+      console.log(img);
       img.style.opacity=0;
       tea.classList.add("animate-fade-in");
       var btn=document.querySelector("#"+circleName+" button");
@@ -188,12 +206,12 @@ document.addEventListener("DOMContentLoaded", function(){
 
     circles[cnt].addEventListener("mouseleave", function(event){
       var circleName=event.target.id;
-      // console.log("leave "+circleName);
+      console.log("leave "+circleName);
       var img=document.querySelector("img#"+circleName+"-img");
       var tea=document.querySelector("div#"+circleName+" p.the-tea");
       var btn=document.querySelector("#"+circleName+" button");
       btn.style.display="none";
-      this.classList.remove("animate-flip");
+      event.target.classList.remove("animate-flip");
       img.style.opacity=1;
       tea.classList.remove("animate-fade-in");
     });
@@ -203,10 +221,12 @@ document.addEventListener("DOMContentLoaded", function(){
     aboutBtn[cnt].addEventListener("click", function(event){
       event.preventDefault();
       var btnName=event.target.name;
-      // console.log(btnName);
+      console.log(btnName);
       //  flip the image with the corresponding button name.
       document.querySelector("#"+btnName).classList.add("animate-flip");
     });
  }
+
+ resizeElement();
 
 })

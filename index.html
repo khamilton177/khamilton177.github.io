@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -76,10 +77,10 @@
               <hr>
             </div>
             <p>Whether it’s coding, decorating, or cooking, I love saying "I made it!".</p>
-            <p>I am an 18-year IT Engineer veteran architecting and implementing Enterprise and Service Management Web Applications.  I have 10 years of experience utilizing front and back end web development technology to customize, extend functionality, and integrate these solutions.  Now, I am pursuing my passion for coding by building web applications from concept to production. </p>
-            <p>I believe my prior experience along with my recent formal training as a Full-Stack Web Developer on Ruby on Rails allows me to be an advantage and viable component to any team or project.  I am continuously working to improve my coding skills, evolve my projects, and dive into new technologies.  Presently, I am pursuing my AWS Certified Developer - Associate certification.</p>
+            <p>I'm an IT Engineer experienced in architecting and implementing Enterprise and Service Management Web Applications.  I have 10 years of experience utilizing front and back end web development technology to customize, extend functionality, and integrate these solutions.</p>
+            <p>Now, I am pursuing my passion for coding by building web applications from concept to production. Utilizing my experience along with my recent formal training as a Full-Stack Web Developer on Ruby on Rails allows me to be an advantage and viable component to any team or project.  I am continuously working to improve my coding skills, evolve my projects, and dive into new technologies.  Presently, I am pursuing my AWS Certified Developer - Associate certification.</p>
             <p>Please have a look around to learn about some of my projects and a little about me.</p>
-            <p>This site is powered by vanilla JavaScript and CSS.  No frameworks or libraries were used for layout or animation.</p>
+            <!-- <p>This site is powered by vanilla JavaScript and CSS.  No frameworks or libraries were used for layout or animation.</p> -->
           </div>
           <div id="skills" class="sect skills">
             <h2 class="sect-titles">Skills</h2>
@@ -154,8 +155,42 @@
                         Utilizing Google Geolocation, Twilio, SendGrid API's
                       </p>
                     </div>
-                    <video id="rockice" class="proj-container" src="./images/Voting-Rock.mp4" type="video/mp4" preload="auto" autoplay loop>
-                    </video>
+                    <img id="rockice-img" class="proj-container cover" src="./images/rockawayice.png">
+                    <!-- <video id="rockice" class="proj-container" src="./images/Voting-Rock.mp4" type="video/mp4" preload="auto" autoplay loop>
+                    </video> -->
+                  </div>
+                </div>
+              </article>
+              <article class="proj-articles">
+                <div class="proj-details">
+                  <div class="proj-links-wrap">
+                    <div>
+                      <a href="http://www.fishbowl.site" target="_blank" id="fishbowl-app" class="proj-links">
+                        <i class="fa fa-rocket fa-2x" aria-hidden="true"></i>
+                      </a>
+                      <span class="proj-span"> Launch FishBowl</span>
+                    </div>
+                    <div>
+                      <a href="http://github.com/khamilton177/FishBowl" target="_blank" id="fishbowl-git" class="proj-links">
+                        <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                      </a>
+                      <span class="proj-span"> FishBowl on GitHub</span>
+                    </div>
+                  </div>
+                  <div class="proj-hold">
+                    <div id="fishbowl-modal" class="proj-modal">
+                      <i class="fa fa-arrows-alt fa-lg modal-close-icon" aria-hidden="true"></i>
+                      <h2 class="proj-modal-title">RoR Blog Webapp</h2>
+                      <p class="proj-modal-para">
+                        Ruby on Rails and Bootstrap.
+                        <BR>
+                        <BR>
+                        Featuring Froala HTML Editor.
+                      </p>
+                    </div>
+                    <img id="fishbowl-img" class="proj-container cover" src="./images/fishbowl_screen.png">
+                    <!-- <video id="rockice" class="proj-container" src="./images/Voting-Rock.mp4" type="video/mp4" preload="auto" autoplay loop>
+                    </video> -->
                   </div>
                 </div>
               </article>
@@ -256,7 +291,7 @@
                     <BR>
                     We both always have a wacky plan.
                     <BR>
-                    We love to sing <strong>...AND WILL LOUDLY</strong>, but really shouldn’t.
+                    We love to sing <strong>...AND WILL LOUDLY</strong> but really shouldn’t.
                   <button name="lucy" title="Click to learn more" type="button" class="p-btn">Lucy Trivia</button>
                   </p>
                   <p class="the-extra-tea">
@@ -272,13 +307,13 @@
               <article>
                 <div id="mannequin" class="circle">
                   <p class="the-tea">
-                    When I was a child, my grandmother owned a real estate office right in front of a bus stop.
+                    When I was a child, my granny owned a real estate office in front of a bus stop.
                     <BR>
                     I would stand in the window and pose like a mannequin.
                     <button name="mannequin" title="Click to learn more" type="button" class="p-btn">True Confession</button>
                   </p>
                   <p class="the-extra-tea">
-                    I would <strong>STILL</strong> do this just in a more congruous setting.
+                    Yeah, I'd <strong>STILL</strong> do this.
                   </p>
                   <img id="mannequin-img" class="imgs" src="./images/mannequin.jpg" alt="">
                 </div>
@@ -287,8 +322,6 @@
                 <div id="eggs" class="circle">
                   <p class="the-tea">
                     I could live off eggs <em>(...and maybe a little ham)</em>.
-                    <BR>
-                    I have over 10 egg main entree recipes.
                     <button name="eggs" title="Click to learn more" type="button" class="p-btn">More info...</button>
                   </p>
                   <p class="the-extra-tea">
@@ -316,15 +349,17 @@
       </main>
       <footer>
         <div class="container footer-container">
-          <h4 class="sigs">“A day without a friend is like a pot without a single drop of honey left inside."- Winnie the Pooh</h4>
+          <h4 class="sigs">© 2017 Kerry J. Hamilton, All Rights Reserved.</h4>
         </div>
       </footer>
     </div>
     <div class="scroll">
-      <button id="scroll-up" type="button" title="Scroll Up"><i class="fa fa-chevron-circle-up fa-2x" aria-hidden="true"></i></button>
+      <a id="scroll-up" class="scroll-up" href="#home"><i class="fa fa-chevron-circle-up fa-2x" aria-hidden="true"></i></a>
     </div>
     <div class="ie-modal">
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--  custom js -->
     <script type="text/javascript" src="portfolio.js"></script>
   </body>
 </html>
